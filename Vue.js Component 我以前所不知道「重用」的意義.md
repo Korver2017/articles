@@ -25,7 +25,44 @@ A: MVVM 與 Component 管理。
 
 首先在 `created()` 生命週期階段呼叫 `getServerTime()` 並把取得之時間用 `setInterval()` 依秒數累加，最終在 `computed()` 用 moment 套件作 format。
 
-<script src="https://gist.github.com/Korver2017/ccd3941dcdad4a969a2ff7429519f8ff.js"></script>
+```
+<template>
+  <span>{{ timer }}</span>
+</template>
+```
+
+```
+<script>
+
+  data () {
+    return {
+      now: '',
+    }
+  },
+
+  created () {
+    this.getServerTime ();
+  },
+
+  computed: {
+    timer () {
+      return moment (this.now).format ('YYYY/MM/DD HH:mm:ss');
+    }
+  },
+
+  methods: {
+    getServerTime () {
+      let $vmc = this;
+      Axios.get ([API])
+        .then (resp => {
+          $vmc.now = resp;
+          setInterval (() => $vmc.now += 1000, 1000);
+        })
+    }
+  }
+
+</script>
+```
 
 # **My Timer Component v2 ⏲️**
 
