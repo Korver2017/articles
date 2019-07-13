@@ -1,15 +1,15 @@
 # Vue.js Component 我以前所不知道「重用」的意義
-## 可以重用的我們就一起來重用吧！
+### 可以重用的我們就一起來重用吧！
 
 ![](https://images.unsplash.com/photo-1542594452-93c3bb4cd1b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 
 Photo by Brooke [Cagle](https://unsplash.com/@brookecagle?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
-# **最初是拳 👊**
+### **最初是拳 👊**
 
 這是我的第一篇 Medium 首發文章 🎉 ，主要是因為公司老大以每篇價值 10 元的紅利鼓勵我寫分享文章，讓我在暑假時間能有摳摳買冰棒吃（所以 Cover 放冰棒圖 🤣），真的好棒棒！（咦，聽說沒寫會被抓去作人形蜈蚣啊啊啊？ OrzOrzOrz…）
 
-# **以前我認識得 Component 重用（Reuse）**
+### **以前我認識得 Component 重用（Reuse）**
 
 Q: Vue.js Framework 的最大特色是什麼？
 
@@ -19,7 +19,7 @@ A: MVVM 與 Component 管理。
 
 以前我的認識很膚淺，假若我創建了一個 Timer （計時器 / 時鐘）的 Component，當我專案中的另一頁也同樣需要這個元件時，我就可以直接引入此元件。但 GG 的是，我的認識僅止於此…
 
-# **My Timer Component v1 ⏲️**
+### **My Timer Component v1 ⏲️**
 
 我的目標是藉由 Call API 的方式取得我所需的時間，假設是某個伺服器的線上時間。
 
@@ -33,7 +33,6 @@ A: MVVM 與 Component 管理。
 
 ```
 <script>
-
   data () {
     return {
       now: '',
@@ -60,11 +59,10 @@ A: MVVM 與 Component 管理。
         })
     }
   }
-
 </script>
 ```
 
-# **My Timer Component v2 ⏲️**
+### **My Timer Component v2 ⏲️**
 
 老大：欸！剛剛你不是寫了一個 Timer 嗎，我這邊要用到，拿來看砍！
 
@@ -76,9 +74,39 @@ A: MVVM 與 Component 管理。
 
 看來老大會很奔潰，之前 Component 的資料被綁死了，如果需要重用的話似乎就必須改寫，而且會面目全非…
 
-<script src="https://gist.github.com/Korver2017/d0c9acd16eba359ca6b5abd8a0da3191.js"></script>
+```
+<template>
+  <span>{{ timer }}</span>
+</template>
+```
 
-# **My Timer Component v3 ⏲️**
+```
+<script>
+  data () {
+    return {
+      now: Date.now (),
+    }
+  },
+
+  created () {
+    this.runTimer ();
+  },
+
+  computed: {
+    timer () {
+      return moment (this.now).format ('YYYY/MM/DD HH:mm:ss');
+  },
+
+  methods: {
+    runTimer () {
+      let $vmc = this;
+      setInterval (() => $vmc.current = Date.now (), 1000);
+    }
+  }
+</script>
+```
+
+### **My Timer Component v3 ⏲️**
 
 老大：乾！你剛剛那個 Timer 的元件超爛的… 你回去修一下再拿來借我。
 
@@ -92,13 +120,64 @@ A: MVVM 與 Component 管理。
 2. 當 Timer 在不同的系統 / 專案套用時，把從外層取得的資料用 **props** 的方式傳遞至 Timer 子元件。
 3. 為維持 Component 獨立運作，需考慮在沒有 **props** 的情況下顯示瀏覽器時間。
 
-<script src="https://gist.github.com/Korver2017/d889411603bacc0c9b82c106c25b7dde.js"></script>
+```
+<!-- 父層元件 -->
+<timer :startTime="systemTime"></timer>
+```
 
-<script src="https://gist.github.com/Korver2017/df2103abe0c8f33434c4f6fcd40d8b67.js"></script>
+```
+<!-- Timer Component -->
+<template>
+  <span>{{ timer }}</span>
+</template>
+```
+
+```
+<script>
+  props: {
+    startTime: {
+      type: String,
+      default: '',
+    },
+  },
+
+  data () {
+    return {
+      now: Date.now (),
+      bias: 0,
+    }
+  },
+
+  created () {
+    this.runTimer ();
+  },
+
+  computed: {
+    timer () {
+      return moment (this.now + this.bias).format ('YYYY/MM/DD HH:mm:ss');
+    },
+  },
+
+  methods: {
+    runTimer () {
+      let $vmc = this;
+      setInterval (() => $vmc.now = Date.now (), 1000);
+    }
+  },
+
+  watch: {
+    startTime () {
+      if (this.start !== '')
+        this.bias = moment (this.startTime).valueOf () - this.now;
+      else this.bias = 0;
+    }
+  }
+</script>
+```
 
 備註：Bias 表示系統時間與 Local Time 的差異，也就是用 AJAX 得到的系統時間與本地瀏覽器時間的差異。
 
-# **高內聚、低耦合、更萬用 💪**
+### **高內聚、低耦合、更萬用 💪**
 
 現在這個 Timer 已經被獨立出來了，當下次有需要拿出來使用時，就可以直說...
 
@@ -106,7 +185,7 @@ A: MVVM 與 Component 管理。
 
 我：哦，對了！如果你需要他 Sync 某個時間，你就傳個 props 給他就可以了 😎。
 
-# **最初是拳；最後是結論 😈**
+### **最初是拳；最後是結論 😈**
 
 好了老大，話說... 我的 10 元冰棒呢！（伸手 🤲
 
