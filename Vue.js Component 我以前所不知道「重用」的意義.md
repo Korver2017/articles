@@ -1,9 +1,9 @@
 # Vue.js Component 我以前所不知道「重用」的意義
 ### 可以重用的我們就一起來重用吧！
 
-![](https://images.unsplash.com/photo-1542594452-93c3bb4cd1b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+![](/images/popsicle_girl.jfif)
 
-Photo by Brooke [Cagle](https://unsplash.com/@brookecagle?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
+Photo by [Brooke Cagle](https://unsplash.com/@brookecagle?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
 ### **最初是拳 👊**
 
@@ -68,7 +68,7 @@ A: MVVM 與 Component 管理。
 
 我：在... 在這裡... 😳
 
-![](https://truth.bahamut.com.tw/s01/201306/255109527a1c16624506d3b66b9c2132.JPG)
+![](/images/let_me_see_see.jfif)
 
 假如現在的需求是，我們要在 **另一處 / 另一專案** 引入相同一個 Timer Component，但這次我不要顯示 Server 的時間，而是本地端的時間呢？
 
@@ -189,7 +189,7 @@ A: MVVM 與 Component 管理。
 
 好了老大，話說... 我的 10 元冰棒呢！（伸手 🤲
 
-![](https://images.unsplash.com/photo-1437196901007-82f158632679?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)
+![](/images/girl_back.jfif)
 
 
 Photo by [Verne Ho](https://unsplash.com/@verneho?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
