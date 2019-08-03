@@ -4,7 +4,7 @@
 
 Photo by [freestocks.org](http://freestocks.org/) on [Unsplash](https://unsplash.com/)
 
-### 謝謝老闆（擠）🙏 / 最初是拳 👊
+### **謝謝老闆（擠）🙏 / 最初是拳** 👊
 
 感恩我們家老大配給筆電，藉由再次設定 Cmder 的過程，把過去的筆記撈出來並且 Run 過一次，感謝老大五倍恩寵！（？
 
@@ -14,13 +14,13 @@ Photo by [freestocks.org](http://freestocks.org/) on [Unsplash](https://unsplash
 
 登楞！因此我就開始由愛生恨...（x
 
-### Cmder
+### **Cmder**
 
 身為一個 Windows 的使用者，輾轉仍然是接觸到了比較有「溫度」（保哥說的 🤣）的 Command Line - **Cmder**。
 
 當然，我認為 Cmder 已經比最初黑底白字的 Command Line 用起來心情好很多了（？） 但心中仍然是嚮往當初印象中 Mac 的 Terminal 樣式。咳咳...（清嗓） 說真的，絕對不是因為我對 Mac 的忌妒、羨慕或迷戀（XD）就是希望看看能不能有更美觀的工具使用。
 
-### 從 Cmder 到美美噠 Cmder
+### **從 Cmder 到美美噠 Cmder**
 
 一開始用 Cmder 的時候有稍微 Survey 一下，看有沒有可以套用或改變樣式的佈景主題。不過不知道是不是下不對關鍵字還是怎麼樣...總之最後是不了了之了 XD
 
@@ -76,7 +76,7 @@ GitHub Source: [https://github.com/tonsky/FiraCode/releases](https://github.com/
 
 我用的 Color Scheme 是 `Ubuntu` 。
 
-### XML 的佈景主題解決方案 🐼
+### **XML 的佈景主題解決方案 🐼**
 
 之前搜尋的時候也看到了這個 Logo 很漂亮（？）的佈景主題，是用 `.xml` 的方式載入。一樣在 GitHub 上面有介紹如何安裝，我用中文快速導覽。
 
@@ -108,7 +108,7 @@ Source 同 GitHub: [https://github.com/HamidFaraji/panda-theme-cmder](https://gi
 
 如果之前有載入 `.lua` 檔案的話，記得要移除一下，不然畫面可能會不如預期。
 
-### 最初是拳；最後是結論 😈
+### **最初是拳；最後是結論 😈**
 
 說真的，這篇不是什麼特別的教學，純粹只是自己的經驗就分享一下。也感謝我們家老闆，鼓勵我參與各種 Conf、討論，最重要的是 **分享** 。看到我們家老大對 Opensource 的熱情（像是在筆電上 Opensource 的貼紙 😎），我著實是備受感染與激勵 💪
 
