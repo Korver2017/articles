@@ -1,8 +1,10 @@
+# Windows 也能有美美噠 Command Line
+
 ![](https://images.unsplash.com/photo-1526045405698-cf8b8acc4aaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80)
 
 Photo by [freestocks.org](http://freestocks.org/) on Unsplash
 
-## 謝謝老闆（擠）🙏 / 最初是拳 👊
+### 謝謝老闆（擠）🙏 / 最初是拳 👊
 
 感恩我們家老大配給筆電，藉由再次設定 Cmder 的過程，把過去的筆記撈出來並且 Run 過一次，感謝老大五倍恩寵！（？
 
@@ -12,13 +14,13 @@ Photo by [freestocks.org](http://freestocks.org/) on Unsplash
 
 登楞！因此我就開始由愛生恨...（x
 
-## Cmder
+### Cmder
 
 身為一個 Windows 的使用者，輾轉仍然是接觸到了比較有「溫度」（保哥說的 🤣）的 Command Line - **Cmder。**
 
 當然，我認為 Cmder 已經比最初黑底白字的 Command Line 用起來心情好很多了（？） 但心中仍然是嚮往當初印象中 Mac 的 Terminal 樣式。咳咳...（清嗓） 說真的，絕對不是因為我對 Mac 的忌妒、羨慕或迷戀（XD）就是希望看看能不能有更美觀的工具使用。
 
-## 從 Cmder 到美美噠 Cmder
+### 從 Cmder 到美美噠 Cmder
 
 一開始用 Cmder 的時候有稍微 Survey 一下，看有沒有可以套用或改變樣式的佈景主題。不過不知道是不是下不對關鍵字還是怎麼樣...總之最後是不了了之了 XD
 
@@ -28,11 +30,11 @@ GitHub: [https://github.com/AmrEldib/cmder-powerline-prompt](https://github.com/
 
 當然他已經有教學了，我在這裡用中文簡易的走過一下。
 
-## STEP 1. Download ZIP
+### STEP 1. Download ZIP
 
 Download ZIP 後解壓縮，找到當中的 5 個 `.lua` 檔； `powerline_core.lua` 、 `powerline_git.lua` 、 `powerline_hg.lua` 、 `powerline_npm.lua` 、 `powerline_prompt.lua` 。
 
-## STEP 2. 增加至設定
+### STEP 2. 增加至設定
 
 把 5 個 `.lua` 檔複製到 `..\cmder\config` ，重開 Cmder 後可以看到樣式的改變。
 
@@ -48,17 +50,17 @@ Download ZIP 後解壓縮，找到當中的 5 個 `.lua` 檔； `powerline_core.
 
 進入專案與顯示分支樣式
 
-## STEP 3. 下載並安裝 Fira Code 字型檔
+### STEP 3. 下載並安裝 Fira Code 字型檔
 
 GitHub Source: [https://github.com/tonsky/FiraCode/releases](https://github.com/tonsky/FiraCode/releases)
 
-## STEP 4. 更改字型
+### STEP 4. 更改字型
 
 開啟 Cmder 並鍵入 `Alt + Win + p` 開啟設定介面（Settings），接著就可以在 `Fonts` 選擇更改字型，選取 `Fira Code`。
 
 ![](/images/settings.png)
 
-## STEP 5. 恭喜完成 👏🎉
+### STEP 5. 恭喜完成 👏🎉
 
 這樣就能看到分支名稱（master）旁邊的圖案了！
 
@@ -70,11 +72,11 @@ GitHub Source: [https://github.com/tonsky/FiraCode/releases](https://github.com/
 
 套用 Fira Code 後即可顯示圖樣
 
-## 備註：
+### 備註：
 
 我用的 Color Scheme 是 `Ubuntu` 。
 
-## XML 的佈景主題解決方案 🐼
+### XML 的佈景主題解決方案 🐼
 
 之前搜尋的時候也看到了這個 Logo 很漂亮（？）的佈景主題，是用 `.xml` 的方式載入。一樣在 GitHub 上面有介紹如何安裝，我用中文快速導覽。
 
@@ -84,21 +86,21 @@ GitHub: [https://github.com/HamidFaraji/panda-theme-cmder](https://github.com/Ha
 
 Photo from [https://github.com/HamidFaraji/panda-theme-cmder](https://github.com/HamidFaraji/panda-theme-cmder)
 
-## STEP 1. Download ZIP
+### STEP 1. Download ZIP
 
 Source 同 GitHub: [https://github.com/HamidFaraji/panda-theme-cmder](https://github.com/HamidFaraji/panda-theme-cmder)
 
-## STEP 2. 開啟 Cmder Settings
+### STEP 2. 開啟 Cmder Settings
 
 開啟 Cmder 並鍵入 `Alt + Win + p` 開啟設定介面。
 
-## STEP 3. Import .xml File
+### STEP 3. Import .xml File
 
 點選 `Import...` 選項後找到下載的 `.xml` 檔，檔名為 `Panda-Theme-Cmder.xml` ，最後記得 `Save settings`。
 
 ![](/images/save_settings.png)
 
-## STEP 4. 恭喜完成 👏🎊
+### STEP 4. 恭喜完成 👏🎊
 
 ![](/images/after_save_settings.png)
 
@@ -106,7 +108,7 @@ Source 同 GitHub: [https://github.com/HamidFaraji/panda-theme-cmder](https://gi
 
 如果之前有載入 `.lua` 檔案的話，記得要移除一下，不然畫面可能會不如預期。
 
-## 最初是拳；最後是結論 😈
+### 最初是拳；最後是結論 😈
 
 說真的，這篇不是什麼特別的教學，純粹只是自己的經驗就分享一下。也感謝我們家老闆，鼓勵我參與各種 Conf、討論，最重要的是 **分享** 。看到我們家老大對 Opensource 的熱情（像是在筆電上 Opensource 的貼紙 😎），我著實是備受感染與激勵 💪
 
