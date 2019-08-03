@@ -1,8 +1,8 @@
 # Windows 也能有美美噠 Command Line
 
-![](https://images.unsplash.com/photo-1526045405698-cf8b8acc4aaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80)
+![](/images/makeup_cover.jfif)
 
-Photo by [freestocks.org](http://freestocks.org/) on Unsplash
+Photo by [freestocks.org](http://freestocks.org/) on [Unsplash](https://unsplash.com/)
 
 ### 謝謝老闆（擠）🙏 / 最初是拳 👊
 
@@ -16,7 +16,7 @@ Photo by [freestocks.org](http://freestocks.org/) on Unsplash
 
 ### Cmder
 
-身為一個 Windows 的使用者，輾轉仍然是接觸到了比較有「溫度」（保哥說的 🤣）的 Command Line - **Cmder。**
+身為一個 Windows 的使用者，輾轉仍然是接觸到了比較有「溫度」（保哥說的 🤣）的 Command Line - **Cmder**。
 
 當然，我認為 Cmder 已經比最初黑底白字的 Command Line 用起來心情好很多了（？） 但心中仍然是嚮往當初印象中 Mac 的 Terminal 樣式。咳咳...（清嗓） 說真的，絕對不是因為我對 Mac 的忌妒、羨慕或迷戀（XD）就是希望看看能不能有更美觀的工具使用。
 
