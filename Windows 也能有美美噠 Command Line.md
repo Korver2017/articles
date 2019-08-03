@@ -1,6 +1,6 @@
 # Windows 也能有美美噠 Command Line
 
-![](/images/makeup_cover.jfif)
+![](/images/windows_beautiful_command_line/makeup_cover.jfif)
 
 Photo by [freestocks.org](http://freestocks.org/) on [Unsplash](https://unsplash.com/)
 
@@ -38,15 +38,15 @@ Download ZIP 後解壓縮，找到當中的 5 個 `.lua` 檔； `powerline_core.
 
 把 5 個 `.lua` 檔複製到 `..\cmder\config` ，重開 Cmder 後可以看到樣式的改變。
 
-![](/images/cmder_original.png)
+![](/images/windows_beautiful_command_line/cmder_original.png)
 
 載入 .lua 檔之前
 
-![](/images/cmder_lua.png)
+![](/images/windows_beautiful_command_line/cmder_lua.png)
 
 更新樣式後
 
-![](/images/cmder_lua_project.png)
+![](/images/windows_beautiful_command_line/cmder_lua_project.png)
 
 進入專案與顯示分支樣式
 
@@ -58,17 +58,17 @@ GitHub Source: [https://github.com/tonsky/FiraCode/releases](https://github.com/
 
 開啟 Cmder 並鍵入 `Alt + Win + p` 開啟設定介面（Settings），接著就可以在 `Fonts` 選擇更改字型，選取 `Fira Code`。
 
-![](/images/settings.png)
+![](/images/windows_beautiful_command_line/settings.png)
 
 ### STEP 5. 恭喜完成 👏🎉
 
 這樣就能看到分支名稱（master）旁邊的圖案了！
 
-![](/images/before_firacode.png)
+![](/images/windows_beautiful_command_line/before_firacode.png)
 
 套用 Fira Code 之前
 
-![](/images/after_firacode.png)
+![](/images/windows_beautiful_command_line/after_firacode.png)
 
 套用 Fira Code 後即可顯示圖樣
 
@@ -82,7 +82,7 @@ GitHub Source: [https://github.com/tonsky/FiraCode/releases](https://github.com/
 
 GitHub: [https://github.com/HamidFaraji/panda-theme-cmder](https://github.com/HamidFaraji/panda-theme-cmder)
 
-![](/images/panda_logo.png)
+![](/images/windows_beautiful_command_line/panda_logo.png)
 
 Photo from [https://github.com/HamidFaraji/panda-theme-cmder](https://github.com/HamidFaraji/panda-theme-cmder)
 
@@ -98,11 +98,11 @@ Source 同 GitHub: [https://github.com/HamidFaraji/panda-theme-cmder](https://gi
 
 點選 `Import...` 選項後找到下載的 `.xml` 檔，檔名為 `Panda-Theme-Cmder.xml` ，最後記得 `Save settings`。
 
-![](/images/save_settings.png)
+![](/images/windows_beautiful_command_line/save_settings.png)
 
 ### STEP 4. 恭喜完成 👏🎊
 
-![](/images/after_save_settings.png)
+![](/images/windows_beautiful_command_line/after_save_settings.png)
 
 備註：
 
