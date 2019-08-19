@@ -1,5 +1,5 @@
 # 我的第一個 Node.js CORS Proxy
-## 我也好想有自己的 Proxy Server 啊啊啊…
+### 我也好想有自己的 Proxy Server 啊啊啊…
 
 ![](/images/cors-proxy-server/agent-man.jpg)
 
@@ -17,7 +17,7 @@ Console.log 印出的 CORS 錯誤訊息
 2. 看到又有人 po 面試文，面試題目中須解決跨域存取問題
 今天就回顧一下之前我所學的經驗，一次解決上述我心中的傷痛 Q_Q
 
-## CORS 與 Proxy
+### CORS 與 Proxy
 
 首先必須了解到，跨域存取的限制是來自於 **瀏覽器** ，不是源於 **API 環境** ；由此為了解決問題，我們可以考慮兩個面向：
 1. 斷開（x）瀏覽器對 CORS 的限制。
@@ -30,7 +30,7 @@ Console.log 印出的 CORS 錯誤訊息
 
 解決方案的關鍵核心在於，Browser 和 Proxy Server 在同網域；且 Proxy Server 與 API 互動不是藉由瀏覽器，而是用後端程式，因此最後避開了 CORS 問題。
 
-## 動手實作啦！
+### 動手實作啦！
 
 今日取材
 
@@ -100,13 +100,13 @@ if (req.method === 'OPTIONS') {
 }
 ```
 
-## 柴柴華麗登場 🎉
+### 柴柴華麗登場 🎉
 
 修正後重新啟動 Proxy Server ，畫面即可正確顯示囉！
 
 ![](/images/cors-proxy-server/success-layout.png)
 
-## 最初是拳，最後是結論 🐾
+### 最初是拳，最後是結論 🐾
 
 關於 CORS / Proxy
 
