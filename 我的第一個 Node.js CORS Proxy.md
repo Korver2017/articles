@@ -5,7 +5,7 @@
 
 Photo by [Dragos Gontariu](https://unsplash.com/@dragos126?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
-## 最初是拳 👊
+### 最初是拳 👊
 相信大家都知道，Call API 有時會遇到的 CORS (Cross-Origin Resource Sharing) 跨域存取問題。以前還是初學小菜雞的時候（雖然現在還是 😂），這總是讓我很困擾...
 
 ![](/images/cors-proxy-server/console-log-error.png)
